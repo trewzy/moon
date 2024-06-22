@@ -1,0 +1,25 @@
+local whitelist = {
+    ["1024758051"] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+}
+
+local function isWhitelisted(userId)
+    return whitelist[userId] ~= nil
+end
+
+local player = game.Players.LocalPlayer
+local userId = tostring(player.UserId) -- Get the user's ID as a string
+
+if isWhitelisted(userId) then
+    print("Access granted. Welcome " .. player.Name .. "!")
+    
+end
+else
+    print("Access denied. " .. player.Name .. " is not whitelisted.")
+    return
+end
