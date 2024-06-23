@@ -5,6 +5,6 @@ local whitelist = {
     ["246170005"] = true,
     ["2484567308"] = true,
     ["1180077179"] = true,
-    [""] = true,
+    ["4511505836"] = true,
 }
 return whitelist
